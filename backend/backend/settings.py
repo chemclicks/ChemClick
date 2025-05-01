@@ -60,6 +60,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://chem-clicks.vercel.app',
     'https://chem-clicks-liard.vercel.app',
     'https://chemclicks.com',
+    'https://www.chemclicks.com',
+    'www.chemclicks.com'
     'chemclicks.com',
 ]
 
