@@ -58,7 +58,7 @@ function Dashboard() {
 
     const BASE_URL = isLocal
       ? 'http://localhost:8000'
-      : 'https://chemclick.onrender.com'
+      : 'https://chemclicks.onrender.com'
 
     fetch(`${BASE_URL}/announcements/`) 
     .then((response) => {
@@ -256,7 +256,7 @@ function Dashboard() {
 
     const BASE_URL = isLocal
       ? 'http://localhost:8000'
-      : 'https://chemclick.onrender.com'
+      : 'https://chemclicks.onrender.com'
     const lessonProgressUrl = isTeacher 
     ? `${BASE_URL}/teacherLessons/progress/${userId}` 
     : `${BASE_URL}/lessons/progress/${userId}`; 

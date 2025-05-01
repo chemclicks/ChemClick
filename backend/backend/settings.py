@@ -58,6 +58,9 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://chem-clicks.vercel.app',
+    'https://chem-clicks-liard.vercel.app',
+    'https://chemclicks.com',
+    'chemclicks.com',
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers)

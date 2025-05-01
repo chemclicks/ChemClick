@@ -99,7 +99,7 @@ function LessonEightPointTwo() {
                 const isLocal = window.location.hostname.includes('localhost');
                 const BASE_URL = isLocal
                             ? 'http://localhost:8000'
-                            : 'https://chemclick.onrender.com';
+                            : 'https://chemclicks.onrender.com';
                 const res = await fetch(`${BASE_URL}/lessons/${nextLessonId}`);
                 const data = await res.json();
                 setNextLessonLocked(data.status === 'locked');

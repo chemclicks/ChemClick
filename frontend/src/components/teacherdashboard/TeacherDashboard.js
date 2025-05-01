@@ -21,7 +21,7 @@ function TeacherDashboard() {
 
       const BASE_URL = isLocal
         ? 'http://localhost:8000'
-        : 'https://chemclick.onrender.com'
+        : 'https://chemclicks.onrender.com'
       const response = await fetch(`${BASE_URL}/lessons/`); 
       const lessons = await response.json();
       const updatedUnits = [
@@ -216,7 +216,7 @@ function TeacherDashboard() {
 
       const BASE_URL = isLocal
         ? 'http://localhost:8000'
-        : 'https://chemclick.onrender.com'
+        : 'https://chemclicks.onrender.com'
       const response = await fetch(`${BASE_URL}/announcements/`);
       const data = await response.json();
       const sortedAnnouncements = data.sort((a, b) => b.post_number - a.post_number); 
@@ -233,7 +233,7 @@ function TeacherDashboard() {
 
       const BASE_URL = isLocal
         ? 'http://localhost:8000'
-        : 'https://chemclick.onrender.com'
+        : 'https://chemclicks.onrender.com'
       const response = await fetch(`${BASE_URL}/announcements/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -260,7 +260,7 @@ function TeacherDashboard() {
 
       const BASE_URL = isLocal
         ? 'http://localhost:8000'
-        : 'https://chemclick.onrender.com'
+        : 'https://chemclicks.onrender.com'
       const response = await fetch(`${BASE_URL}/announcements/${id}/`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -285,7 +285,7 @@ function TeacherDashboard() {
 
       const BASE_URL = isLocal
         ? 'http://localhost:8000'
-        : 'https://chemclick.onrender.com'
+        : 'https://chemclicks.onrender.com'
       const response = await fetch(`${BASE_URL}/announcements/${id}/`, {
         method: 'DELETE',
       });
@@ -315,7 +315,7 @@ function TeacherDashboard() {
 
         const BASE_URL = isLocal
           ? 'http://localhost:8000'
-          : 'https://chemclick.onrender.com'
+          : 'https://chemclicks.onrender.com'
         const response = await fetch(`${BASE_URL}/announcements/`, {
           method: 'DELETE',
         });

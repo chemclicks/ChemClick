@@ -25,7 +25,7 @@ function TeacherLogin() {
 
           const BASE_URL = isLocal
             ? 'http://localhost:8000'
-            : 'https://chemclick.onrender.com'
+            : 'https://chemclicks.onrender.com'
           const response = await fetch(`${BASE_URL}/teacher/teacherlogin/`, {
               method: 'POST',
               headers: {

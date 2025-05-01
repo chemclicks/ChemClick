@@ -21,7 +21,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
           const BASE_URL = isLocal
             ? 'http://localhost:8000'
-            : 'https://chemclick.onrender.com'
+            : 'https://chemclicks.onrender.com'
           const response = await fetch(`${BASE_URL}/users/`);
           if (!response.ok) throw new Error("Failed to fetch users");
 
@@ -67,7 +67,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
     const BASE_URL = isLocal
       ? 'http://localhost:8000'
-      : 'https://chemclick.onrender.com'
+      : 'https://chemclicks.onrender.com'
     fetch(`${BASE_URL}/lessons/${lesson.lesson_id}/`)
       .then((res) => {
         if (res.status === 404) {
@@ -113,7 +113,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
     const BASE_URL = isLocal
       ? 'http://localhost:8000'
-      : 'https://chemclick.onrender.com'
+      : 'https://chemclicks.onrender.com'
 
     const url = isCreating
       ? `${BASE_URL}/lessons/`
@@ -213,7 +213,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
             const BASE_URL = isLocal
               ? 'http://localhost:8000'
-              : 'https://chemclick.onrender.com'
+              : 'https://chemclicks.onrender.com'
             const response = await fetch(`${BASE_URL}/users/`);
             if (!response.ok) throw new Error("Failed to fetch users");
 
@@ -236,7 +236,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
           const BASE_URL = isLocal
             ? 'http://localhost:8000'
-            : 'https://chemclick.onrender.com'
+            : 'https://chemclicks.onrender.com'
           const response = await fetch(`${BASE_URL}/users/${userId}/`, { method: "DELETE" });
 
           if (!response.ok) {
@@ -260,7 +260,7 @@ function TeacherUnitList({ units, currentUnit }) {
 
           const BASE_URL = isLocal
             ? 'http://localhost:8000'
-            : 'https://chemclick.onrender.com'
+            : 'https://chemclicks.onrender.com'
           const response = await fetch(`${BASE_URL}/users/delete-all/`, { method: "DELETE" });
 
           if (!response.ok) {
