@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.lesson-one-point-ten {
+    background-image: url('../../assets/question/ChemClick_Background_Faded.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lesson-one-point-ten-box {
+    height: 77vh;
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson-one-point-ten-box-innercont {
+    width: 60vw;
+    max-height: 100vh; /* Ensure the height is constrained to the viewport */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #00D5D7;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+
+    background-image: url('../../assets/question/RainbowBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.5);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 5%;
+
+}
+
+.lesson-one-point-ten-box-title {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 5px solid #015770;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+}
+
+.lesson-one-point-ten-content {
+    width: 100%;
+    max-width: 950px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #015770;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 5px solid #015770;
+    padding-bottom: 40px;
+
+}
+
+.lesson-one-point-ten-cylinder-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+    border: 2px solid #5f3838;
+}
+
+.lesson-one-point-ten-currentMeasurement{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    max-height: 100px;
+}
+
+.lesson-one-point-ten-cylinder {
+    height: 100%;
+    /* display: block; */
+}
+
+.lesson-one-point-ten-cylinderWaterContainer {
+    position: relative;
+    min-height: 400px;
+    /* border: solid; */
+    overflow: hidden;
+}
+
+.lesson-one-point-ten-cylinderWater {
+    position: absolute;
+    left: 22px;
+    width: 102px;
+    height: 100%;
+    opacity: 50%;
+}
+
+.lesson-one-point-ten-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+.lesson-one-point-ten-question h1, .lesson-one-point-ten-box-title h1 {
+    font-size: 1.3rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+    margin:0;
+}
+
+.lesson-one-point-ten-currentMeasurement p {
+    font-size: 1.2rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: lighter;
+    margin:0;
+    color: #015770;
+}
+
+.lesson-one-point-ten-prompt {
+    font-size: 1.3rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+.lesson-one-point-ten-input {
+    width: 37%; 
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid #015770;
+    background-color: #e7eae2;
+    padding: 10px;
+    font-size: 1.5rem; 
+    font-family: 'Orelega One', sans-serif;
+    text-align: center;
+}
+
+.submit-feedback-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 8px; 
+    margin-top: 5px;
+    position: relative;
+}
+
+.lesson-one-point-ten-feedback {
+    font-size: 1.25rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-one-point-ten-feedback.correct {
+    background-color: #e0f8e0;
+    color: #237B31;
+    border: 2px solid #237B31;
+    opacity: 1;
+}
+
+.lesson-one-point-ten-feedback.incorrect {
+    background-color: #ffe6e6;
+    color: #662e2e;
+    border: 2px solid #c94444;
+    opacity: 1;
+}
+
+.lesson-one-point-ten-feedback.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.lesson-one-point-ten-box {
+    margin-top: 10px; 
+    padding-bottom: 15px; 
+}
+
+.lesson-one-point-ten-question {
+    gap: 8px; 
+}
+
+.lesson-one-point-ten-submit, .lesson-one-point-ten-next {
+    background-color: #E3F0CC;
+    border: 5px solid #237B31;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Orelega One', sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: -15px;
+    color: black;
+}
+
+.lesson-one-point-ten-submit:active, .lesson-one-point-ten-next:active {
+    background-color: #98c844;
+}
+
+.separator {
+    width: 102%; 
+    border: none;
+    border-top: 4px solid #015770;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

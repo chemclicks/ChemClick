@@ -1,0 +1,323 @@
+.teacherannouncements-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    position: fixed;
+    
+}
+.teacherannouncements-container {
+    position: absolute;
+    top: 155px; 
+    right: calc((100vw - 1160px) / 2 - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+    width: 350px; 
+    height: 579px; 
+    border: 3px solid #015770;
+    border-radius: 15px;
+    background-color: #00D5D7; 
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8); 
+    border: 5px solid white;
+    z-index: 20;
+    margin-bottom: -20px;
+    overflow: hidden;
+    z-index: 0;
+    background-position: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+    background-repeat: no-repeat;
+}
+
+.teacherannouncements-title {
+    font-size: 2rem; 
+    font-family: 'Orelega One', cursive;
+    color: black;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    background-color: white;
+    border: 5px solid #015770;
+    box-shadow: 0 8px 15px rgba(1, 87, 112, 0.8);
+    text-align: center;
+    z-index: 2; 
+    position: relative; 
+    margin-bottom: 10px; 
+}
+
+.teacherannouncements-writing-box{
+    width: 100%; 
+    height: 285px; 
+    padding: 20px; 
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #015770;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8);
+    z-index: 1; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.input-teacher{
+    width: 100%; 
+    height: 175px; 
+    padding: 10px; 
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8);
+    z-index: 1; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+    text-align: left;
+    line-height: normal;
+   
+}
+
+.textarea-teacher {
+    width: 100%; 
+    height: 150px;
+    padding: 10px; 
+    font-size: 1rem; 
+    font-family: 'Orelega One', cursive; 
+    color: black; 
+    background-color: lightgray; 
+    border: 3px solid #015770; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8); 
+    resize: none; 
+    line-height: 1.5; 
+    overflow-y: auto; 
+}
+
+.textarea-teacher:focus {
+    outline: none; 
+    border-color: #0288d1; 
+    box-shadow: 0 4px 10px rgba(2, 136, 209, 0.4); 
+}
+
+.teacherannouncements-content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 300px; 
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #015770;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8); 
+    margin-top: 5px;
+}
+
+.teacherannouncements-content-box {
+    width: 100%; 
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+}
+
+.teacherannouncement-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-top: 10px;
+    padding:10px;
+    font-family: 'Orelega One', cursive;
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 1px; 
+}
+
+.teacherannouncement-author {
+    margin-top: -5px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.teacherannouncement-date {
+    color: darkgray;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.teacherannouncement-text {
+    font-size: 1rem;
+    color: black;
+    flex-grow: 1; 
+    margin-bottom: 12px;
+}
+
+.teacherannouncement-message:last-child {
+    margin-bottom: 12px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.post{
+    font-family: 'Orelega One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    height: 59px;
+    color: black;
+    background: lightgreen;
+    border-style:solid;
+    border-color: green;
+    font-size: 20px; 
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: background 0.3s ease;
+}
+
+.post:hover {
+    background: rgb(43, 178, 43); /* Change to the desired hover color */
+}
+
+.delete-all {
+    font-family: 'Orelega One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 59px;
+    color: black;
+    /* background: lightgreen; */
+    border-style:solid;
+    border-color: rgb(155, 21, 21);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px ;
+    transition: background 0.3s ease;
+    background-color: #dc3545; 
+}
+
+.delete-all:hover {
+    background-color: rgb(193, 44, 44); /* Change to the desired hover color */
+}
+
+.latest-message {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    border: 2px solid #0288d1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 136, 209, 0.2);
+    animation: highlightPulse 2s ease-in-out; 
+}
+
+@keyframes highlightPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 136, 209, 0.2);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 15px rgba(0, 136, 209, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 136, 209, 0.2);
+    }
+}
+
+.textarea-teacher-edit {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Orelega One', cursive;
+    background-color: lightgray;
+    border: 3px solid #015770;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.8);
+    resize: none;
+    line-height: 1.5;
+    overflow-y: auto;
+}
+
+.textarea-teacher-edit:focus {
+    outline: none;
+    border-color: #0288d1;
+    box-shadow: 0 4px 10px rgba(2, 136, 209, 0.4);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    background-color: #008184;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Orelega One', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #009ca4;
+}
+
+.save-button, .cancel-button {
+    background-color: #008184;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Orelega One', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover, .cancel-button:hover {
+    background-color: #009ca4;
+}
+
+.toast-notification {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Orelega One', cursive;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out;
+    white-space: nowrap; 
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    80% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+
+.teacherannouncements-writing-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

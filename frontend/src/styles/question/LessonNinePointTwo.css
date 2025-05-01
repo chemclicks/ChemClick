@@ -1,0 +1,107 @@
+.formula-input-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .formula-row {
+    display: flex;
+    gap: 40px; /* Space between element groups */
+    align-items: center;
+  }
+  
+  .element-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between base and exponent column */
+  }
+  
+  .exponent-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between charge and ion inputs */
+  }
+  
+  .base-input {
+    width: 70px;
+    height: 70px; /* Make it tall enough to align with the column */
+    text-align: center;
+    font-size: 1.2em;
+    padding: 8px;
+  }
+  
+  .super-input, .sub-input {
+    width: 60px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  /* Optional: Add some visual distinction to the different input types */
+  .base-input {
+    border: 2px solid #007bff;
+  }
+  
+  .super-input {
+    border: 2px solid #28a745;
+  }
+  
+  .sub-input {
+    border: 2px solid #dc3545;
+  }
+
+  .lesson-nine-point-two-submit, .lesson-nine-point-two-next {
+    background-color: #E3F0CC;
+    border: 5px solid #237B31;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Orelega One', sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.lesson-nine-point-two-content {
+  width: 100%;
+  max-width: 950px;
+  min-height: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 3px solid #015770;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 5px solid #015770;
+  padding-bottom: 40px;
+}
+
+.lesson-nine-point-two-feedback {
+  font-size: 1.25rem;
+  font-family: 'Orelega One', sans-serif;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: -20px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-nine-point-two-feedback.correct {
+  background-color: #e0f8e0;
+  color: #237B31;
+  border: 2px solid #237B31;
+  opacity: 1;
+}
+
+.lesson-nine-point-two-feedback.incorrect {
+  background-color: #ffe6e6;
+  color: #662e2e;
+  border: 2px solid #c94444;
+  opacity: 1;
+}

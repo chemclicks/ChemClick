@@ -1,0 +1,134 @@
+.lesson-nine-point-one-content {
+    width: 100%;
+    max-width: 950px;
+    min-height: 650px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #015770;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 5px solid #015770;
+    padding-bottom: 40px;
+}
+
+.dropzone {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.dropped-ion {
+    width: 70px;
+    height: 70px;
+}
+.droppedIons{
+    width: 105px;
+    height: 105px;
+    margin-top: 15px;
+}
+.delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Correct Answer Animation */
+.merge-animation {
+    animation: mergeEffect 5s ease-in-out forwards;
+}
+
+@keyframes mergeEffect {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+/* Feedback Styling */
+.lesson-nine-point-one-feedback {
+    font-size: 1.25rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-nine-point-one-feedback.correct {
+    background-color: #e0f8e0;
+    color: #237B31;
+    border: 2px solid #237B31;
+    opacity: 1;
+}
+
+.lesson-nine-point-one-feedback.incorrect {
+    background-color: #ffe6e6;
+    color: #662e2e;
+    border: 2px solid #c94444;
+    opacity: 1;
+}
+
+
+.ions-container-bottom {
+    display: flex; /* Use flex to stack ion combs vertically */
+    flex-direction: row; /* Stack ion combs vertically */
+    align-items: center; /* Center the combs horizontally */
+    gap: 10px; /* Space between each ion comb */
+}
+
+.ions-container-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.separator-line {
+    width: 100%; /* Full width separator */
+    background-color: #000; /* Black vertical line */
+    height: 1px; /* Thin line */
+}
+
+.lesson-one-point-one-measurement-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center the content horizontally */
+    gap: 20px; /* Space between top container, separator, and bottom container */
+}
+.lesson-nine-point-one-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%; 
+    height: 100%;
+}
+.lesson-nine-point-one-question h1, .lesson-one-point-one-box-title h1 {
+    font-size: 1.3rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+    margin:0;
+}
+
+.lesson-nine-point-one-question {
+    gap: 50px; 
+}

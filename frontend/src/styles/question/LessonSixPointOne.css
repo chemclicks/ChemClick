@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.LessonSixPointOne {
+    background-image: url('../../assets/question/ChemClick_Background_Faded.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.LessonSixPointOneBox {
+    height: 77vh;
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LessonSixPointOneBoxInnercont {
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #00d5d7;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+    background-image: url('../../assets/question/RainbowBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    box-shadow: 0 4px 10px rgba(1, 87, 112, 0.5);
+    margin-right: 5%;
+
+}
+
+.LessonSixPointOneBoxTitle {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 5px solid #015770;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.LessonSixPointOneBoxTitle h1 {
+    font-size: 1.3rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+}
+
+.LessonSixPointOneContent {
+    width: 100%;
+    max-width: 950px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 5px solid #015770;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.LessonSixPointOnePrompt {
+    font-size: 1.3rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: normal;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+.LessonSixPointOneRow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.LessonSixPointOneInput {
+    display: flex;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    overflow-y: scroll; 
+    margin: 0;
+    border-radius: 5px;
+    border: 5px solid #015770;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.LessonSixPointOneImageSelector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LessonSixPointOneArrows {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.LessonSixArrowLeft,
+.LessonSixArrowRight {
+    all: unset;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #015770;
+    border: 3px solid #015770;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 3px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.LessonSixPointOneImageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 290px;
+    margin: 0;
+    border-radius: 5px;
+    border: 5px solid #015770;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.LessonSixArrowLeft:hover,
+.LessonSixArrowRight:hover {
+    background-color: #00d3d785;
+    color: #ffffff;
+}
+
+.LessonSixArrowLeft:active,
+.LessonSixArrowRight:active {
+    background-color: #d3f6f7;
+    transform: scale(0.95);
+}
+
+.LessonSixPointOneImageContainer::-webkit-scrollbar {
+    width:8px; 
+}
+
+.LessonSixPointOneImageContainer::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 5px;
+}
+
+.LessonSixPointOneImageContainer .scrollable-image {
+    width: 100%;
+    height: auto;
+}
+
+.LessonSixPointOneFeedback {
+    font-size: 1.25rem;
+    font-family: 'Orelega One', sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.LessonSixPointOneFeedback.correct {
+    background-color: #e0f8e0;
+    margin-top: 15px;
+    color: #237b31;
+    border: 2px solid #237b31;
+}
+
+.LessonSixPointOneFeedback.incorrect {
+    background-color: #ffe6e6;
+    color: #662e2e;
+    border: 2px solid #c94444;
+    margin-top: 15px;
+}
+
+.LessonSixPointOneFeedback.image-feedback {
+    background-color: #e0f0ff;
+    color: #003366;
+    border: 2px solid #005bb5;
+    margin-top: 15px;
+}
+
+.LessonSixPointOneSubmit, .LessonSixPointOneNext {
+    background-color: #e3f0cc;
+    border: 5px solid #237b31;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Orelega One', sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: -15px;
+    color: black;
+}
+
+.LessonSixPointOneSubmit:active, .LessonSixPointOneNext:active {
+    background-color: #98c844;
+}
+
+
+.LessonSix-bohr-model-container {
+    text-align: center;
+    font-family: 'Orelega One', sans-serif;
+
+    width: 100%;
+    height: 80%;
+}
+
+.LessonSix-bohr-model {
+    position: relative;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+
+.LessonSix-electron-shell.glow {
+    box-shadow: 0 0 15px 10px rgba(0, 255, 255, 0.7); /* Glow effect */
+}
+
+.LessonSix-electron-shell {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.electron {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 30% 30%, #ff9999, #cc0000); /* Light reflection effect */
+    border-radius: 50%;
+    box-shadow: 
+      0px 0px 8px rgba(255, 0, 0, 0.8),  /* Outer red glow */
+      3px 3px 6px rgba(0, 0, 0, 0.5),    /* Drop shadow for depth */
+      inset -2px -2px 4px rgba(0, 0, 0, 0.6), /* Inner shadow for volume */
+      inset 2px 2px 4px rgba(255, 255, 255, 0.4); /* Soft light reflection */
+    filter: brightness(1.4) saturate(1.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nucleus {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at 30% 30%, #99ffff, #0099cc); /* Light reflection effect */
+    border-radius: 50%;
+    box-shadow: 
+      0px 0px 12px rgba(0, 255, 255, 0.8), /* Outer cyan glow */
+      4px 4px 6px rgba(0, 0, 0, 0.6), /* Drop shadow for depth */
+      inset -3px -3px 6px rgba(0, 0, 0, 0.7), /* Inner shadow for volume */
+      inset 3px 3px 6px rgba(255, 255, 255, 0.4); /* Soft light reflection */
+    filter: brightness(1.1) saturate(1.5);
+    z-index: 2;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
